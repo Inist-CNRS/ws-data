@@ -3,3 +3,4 @@
 /train_data
 /astro.xlsx
 /best-model.pt
+.env
