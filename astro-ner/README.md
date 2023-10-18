@@ -17,6 +17,11 @@ export WEBDAV_LOGIN=????
 export WEBDAV_PASSWORD=?????
 ```
 
-Pour prendre en compte ces trois lignes : `source .env`.
+Pour configurer le remote DVC :
 
-Pour déclarer un remote DVC : `dvc remote add -d origin $WEBDAV_URL`
+```bash
+source .env
+dvc remote add -d origin $WEBDAV_URL
+dvc remote modify origin user $WEBDAV_LOGIN
+dvc remote modify origin password $WEBDAV_PASSWORD
+```
