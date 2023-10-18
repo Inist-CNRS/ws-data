@@ -1,0 +1,5 @@
+outs:
+- md5: 7d9855c57c102f94c9dfdb250e4c8fd5
+  size: 30468
+  hash: md5
+  path: astro.xlsx
