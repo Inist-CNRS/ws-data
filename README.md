@@ -35,3 +35,9 @@ mindmap
             affiliations-tools
                 RNSR
 ```
+
+Chaque répertoire doit contenir un fichier de configuration déclarant les
+dépendances utilisées.  
+Pour python, c'est un fichier `requirements.txt` (éventuellement obtenu en
+utilisant la commande `pip freeze`).  
+Pour node, c'est un `package.json`.
