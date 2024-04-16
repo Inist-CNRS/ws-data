@@ -19,8 +19,7 @@ source .venv/bin/activate
 Les commandes pour installer DVC sont :
 
 ```bash
-pip install wheel # pré-requis nécessaire
-pip install dvc[webdav]==3.42.0
+pip install -r requirements.txt
 ```
 
 ## Configurer le remote DVC
@@ -42,4 +41,10 @@ dvc remote add --local -d origin $WEBDAV_URL
 dvc remote modify --local origin user $WEBDAV_LOGIN
 dvc remote modify --local origin password $WEBDAV_PASSWORD
 dvc config core.autostage true
+```
+
+## Générer le pickle
+
+```bash
+python preprocessing.py
 ```
