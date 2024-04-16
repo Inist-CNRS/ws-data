@@ -1,0 +1,5 @@
+outs:
+- md5: 8f4c9f5e1d8ae927373a48f3e17691be
+  size: 7176596
+  hash: md5
+  path: nam_dict_merged.txt
