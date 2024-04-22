@@ -1,10 +1,21 @@
 # Installer DVC
 
-Pour installer DVC, il est conseillé de créer un environnement virtuel. Les commandes sont :
+Pour installer DVC, il est conseillé de créer un environnement virtuel.
 
 ```bash
-pip install wheel # pré-requis nécessaire
-pip install dvc[webdav]
+python3 -m venv .venv/
+```
+
+Pour activer :
+
+```bash
+source .venv/bin/activate
+```
+
+Les commandes pour installer dvc sont :
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Configurer le remote DVC
@@ -21,7 +32,9 @@ Pour configurer le remote DVC :
 
 ```bash
 source .env
-dvc remote add -d origin $WEBDAV_URL
-dvc remote modify origin user $WEBDAV_LOGIN
-dvc remote modify origin password $WEBDAV_PASSWORD
+dvc init --subdir
+dvc remote add --local -d origin $WEBDAV_URL
+dvc remote modify --local origin user $WEBDAV_LOGIN
+dvc remote modify --local origin password $WEBDAV_PASSWORD
+dvc config core.autostage true
 ```
