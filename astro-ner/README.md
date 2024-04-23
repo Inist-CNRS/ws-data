@@ -38,3 +38,10 @@ dvc remote modify --local origin user $WEBDAV_LOGIN
 dvc remote modify --local origin password $WEBDAV_PASSWORD
 dvc config core.autostage true
 ```
+
+Pour envoyer un fichier de plus de 500M :
+
+- Mettre le fichier dans un répertoire
+- Découper le fichier avec `split -b 500m nom_du_fichier`
+- Faire un `dvc add répertoire`
+- `dvc push répertoire.dvc`
