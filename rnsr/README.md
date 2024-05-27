@@ -57,15 +57,15 @@ bun install
 ## Lancer le programme
 
 ```bash
-bin/prepareRnsrJson.ts -f data/RNSR-2023.xml
+bin/prepareRnsrJson.ts -f data/RNSR-2023.xml -t data/RNSR-2023.json
 ```
 
-Le résultat sera dans `data/RNSR.json`.
+Le résultat sera dans `data/RNSR-2023.json`.
 
 ## Trouver une structure à partir du RNSR
 
 ```bash
-$ fx < data/RNSR.json '.structures.structure.find(x => x.num_nat_struct ==="198822446E")'
+$ fx < data/RNSR-2023.json '.structures.structure.find(x => x.num_nat_struct ==="198822446E")'
 {
   "num_nat_struct": "198822446E",
   "intitule": "Institut de l'information scientifique et technique",

@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import { parseArgs } from 'util';
+import { parseArgs } from 'node:util';
 import path from 'path';
 import { XMLParser } from 'fast-xml-parser';
 import { depleteString } from '../src/strings';
@@ -76,26 +76,35 @@ const simplifyStructure = (structure: {
 };
 
 const {
-    values: { file },
+    values: { from, to },
 } = parseArgs({
-    args: Bun.argv,
     options: {
-        file: {
+        from: {
             type: 'string',
             short: 'f',
-            name: 'file',
+            name: 'from',
+        },
+        to: {
+            type: 'string',
+            short: 't',
+            name: 'to',
         },
     },
     strict: true,
     allowPositionals: true,
 });
 
-if (!file) {
+if (!from) {
     console.error('No file specified, use -f <path>');
     process.exit(1);
 }
 
-getRNSR(file)
+if (!to) {
+    console.error('No output file specified, use -t <path>');
+    process.exit(2);
+}
+
+getRNSR(from)
     .then((rnsr) => {
         const simplifiedStructures =
             rnsr.structures.structure.map(simplifyStructure);
@@ -106,10 +115,11 @@ getRNSR(file)
     })
     .then((simplifiedRnsr) =>
         Bun.write(
-            path.join(__dirname, '../data/RNSR.json'),
+            to,
+            // path.join(__dirname, '../data/RNSR.json'),
             JSON.stringify(simplifiedRnsr),
         ),
     )
     .then(() => {
-        console.log('data/RNSR.json updated');
+        console.log(`${to} updated`);
     });
