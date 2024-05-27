@@ -75,6 +75,8 @@ const simplifyStructure = (structure: {
     return simplifiedStructure;
 };
 
+////////////////////////////////////////////////////
+// Arguments
 const {
     values: { from, to },
 } = parseArgs({
@@ -104,6 +106,7 @@ if (!to) {
     process.exit(2);
 }
 
+// Process
 getRNSR(from)
     .then((rnsr) => {
         const simplifiedStructures =
