@@ -1,0 +1,5 @@
+outs:
+- md5: 20851c79fb6711cab2e98725be466f20
+  size: 9028193
+  hash: md5
+  path: RNSR-2023.json

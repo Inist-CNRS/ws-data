@@ -1,0 +1,5 @@
+outs:
+- md5: 63e99fa20a1a47b49ed85bf9d5545b93
+  size: 30073313
+  hash: md5
+  path: RNSR-2023.xml
