@@ -71,11 +71,39 @@ On utilise `fasttext` comme classifieur. On utilise `process-train-test.py` pour
 ## paramètres d'entrainements
 
 On utilise ces paramètres pour l'entraînement :
+
+```text
+dim 55
+ws 5
+epoch 47
+minCount 1
+neg 5
+wordNgrams 1
+loss softmax
+model sup
+bucket 0
+minn 0
+maxn 0
+lrUpdateRate 100
+t 0.0001
+```
+
 et on obtient le modèle `model.bin`, stocké dans notre webdav, pouvant être obtenu grâce au fichier `model.dvc`
 
 ## Sélection du seuil
 
 Pour sélectionner le seuil, le code `select-thereshold.py` est utilisé. Il permet de voir la précision du modèle et le silence en fonction du seuil.
+Voici un exemple de sortie :
+
+```text
+seuil:  0.1    precision:  0.83348    silence:  1.235513603004769e-05
+seuil:  0.2    precision:  0.83767    silence:  0.005856334
+seuil:  0.3    precision:  0.84491    silence:  0.018372087
+seuil:  0.4    precision:  0.85794    silence:  0.044947984
+seuil:  0.5    precision:  0.87608    silence:  0.086757765
+seuil:  0.6    precision:  0.89931    silence:  0.144975166
+seuil:  0.7    precision:  0.91845    silence:  0.205589463
+```
 
 # Autres
 
