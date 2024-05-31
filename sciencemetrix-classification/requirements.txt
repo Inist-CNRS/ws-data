@@ -1,0 +1,2 @@
+wheel
+dvc[webdav]==3.42.0

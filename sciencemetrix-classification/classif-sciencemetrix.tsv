@@ -1,0 +1,174 @@
+1	Applied Sciences	Agriculture, Fisheries & Forestry	Agronomy & Agriculture
+2	Applied Sciences	Agriculture, Fisheries & Forestry	Dairy & Animal Science
+3	Applied Sciences	Agriculture, Fisheries & Forestry	Fisheries
+4	Applied Sciences	Agriculture, Fisheries & Forestry	Food Science
+5	Applied Sciences	Agriculture, Fisheries & Forestry	Forestry
+6	Applied Sciences	Agriculture, Fisheries & Forestry	Horticulture
+7	Applied Sciences	Agriculture, Fisheries & Forestry	Veterinary Sciences
+8	Applied Sciences	Built Environment & Design	Architecture
+9	Applied Sciences	Built Environment & Design	Building & Construction
+10	Applied Sciences	Built Environment & Design	Design Practice & Management
+11	Applied Sciences	Built Environment & Design	Urban & Regional Planning
+12	Applied Sciences	Enabling & Strategic Technologies	Bioinformatics
+13	Applied Sciences	Enabling & Strategic Technologies	Biotechnology
+14	Applied Sciences	Enabling & Strategic Technologies	Energy
+15	Applied Sciences	Enabling & Strategic Technologies	Materials
+16	Applied Sciences	Enabling & Strategic Technologies	Nanoscience & Nanotechnology
+17	Applied Sciences	Enabling & Strategic Technologies	Optoelectronics & Photonics
+18	Applied Sciences	Enabling & Strategic Technologies	Strategic, Defence & Security Studies
+19	Applied Sciences	Engineering	Aerospace & Aeronautics
+20	Applied Sciences	Engineering	Automobile Design & Engineering
+21	Applied Sciences	Engineering	Biomedical Engineering
+22	Applied Sciences	Engineering	Chemical Engineering
+23	Applied Sciences	Engineering	Civil Engineering
+24	Applied Sciences	Engineering	Electrical & Electronic Engineering
+25	Applied Sciences	Engineering	Environmental Engineering
+26	Applied Sciences	Engineering	Geological & Geomatics Engineering
+27	Applied Sciences	Engineering	Industrial Engineering & Automation
+28	Applied Sciences	Engineering	Mechanical Engineering & Transports
+29	Applied Sciences	Engineering	Mining & Metallurgy
+30	Applied Sciences	Engineering	Operations Research
+31	Applied Sciences	Information & Communication Technologies	Artificial Intelligence & Image Processing
+32	Applied Sciences	Information & Communication Technologies	Computation Theory & Mathematics
+33	Applied Sciences	Information & Communication Technologies	Computer Hardware & Architecture
+34	Applied Sciences	Information & Communication Technologies	Distributed Computing
+35	Applied Sciences	Information & Communication Technologies	Information Systems
+36	Applied Sciences	Information & Communication Technologies	Medical Informatics
+37	Applied Sciences	Information & Communication Technologies	Networking & Telecommunications
+38	Applied Sciences	Information & Communication Technologies	Software Engineering
+39	Arts & Humanities	Communication & Textual Studies	Communication & Media Studies
+40	Arts & Humanities	Communication & Textual Studies	Languages & Linguistics
+41	Arts & Humanities	Communication & Textual Studies	Literary Studies
+42	Arts & Humanities	Historical Studies	Anthropology
+43	Arts & Humanities	Historical Studies	Archaeology
+44	Arts & Humanities	Historical Studies	Classics
+45	Arts & Humanities	Historical Studies	History
+46	Arts & Humanities	Historical Studies	History of Science, Technology & Medicine
+47	Arts & Humanities	Historical Studies	History of Social Sciences
+48	Arts & Humanities	Philosophy & Theology	Applied Ethics
+49	Arts & Humanities	Philosophy & Theology	Philosophy
+50	Arts & Humanities	Philosophy & Theology	Religions & Theology
+51	Arts & Humanities	Visual & Performing Arts	Art Practice, History & Theory
+52	Arts & Humanities	Visual & Performing Arts	Drama & Theater
+53	Arts & Humanities	Visual & Performing Arts	Folklore
+54	Arts & Humanities	Visual & Performing Arts	Music
+55	Economic & Social Sciences	Economics & Business 	Accounting
+56	Economic & Social Sciences	Economics & Business 	Agricultural Economics & Policy
+57	Economic & Social Sciences	Economics & Business 	Business & Management
+58	Economic & Social Sciences	Economics & Business 	Development Studies
+59	Economic & Social Sciences	Economics & Business 	Econometrics
+60	Economic & Social Sciences	Economics & Business 	Economic Theory
+61	Economic & Social Sciences	Economics & Business 	Economics
+62	Economic & Social Sciences	Economics & Business 	Finance
+63	Economic & Social Sciences	Economics & Business 	Industrial Relations
+64	Economic & Social Sciences	Economics & Business 	Logistics & Transportation
+65	Economic & Social Sciences	Economics & Business 	Marketing
+66	Economic & Social Sciences	Economics & Business 	Sport, Leisure & Tourism
+67	Economic & Social Sciences	Social Sciences	Criminology
+68	Economic & Social Sciences	Social Sciences	Cultural Studies
+69	Economic & Social Sciences	Social Sciences	Demography
+70	Economic & Social Sciences	Social Sciences	Education
+71	Economic & Social Sciences	Social Sciences	Family Studies
+72	Economic & Social Sciences	Social Sciences	Gender Studies
+73	Economic & Social Sciences	Social Sciences	Geography
+74	Economic & Social Sciences	Social Sciences	Information & Library Sciences
+75	Economic & Social Sciences	Social Sciences	International Relations
+76	Economic & Social Sciences	Social Sciences	Law
+77	Economic & Social Sciences	Social Sciences	Political Science & Public Administration
+78	Economic & Social Sciences	Social Sciences	Science Studies
+79	Economic & Social Sciences	Social Sciences	Social Sciences Methods
+80	Economic & Social Sciences	Social Sciences	Social Work
+81	Economic & Social Sciences	Social Sciences	Sociology
+82	Health Sciences	Biomedical Research	Anatomy & Morphology
+83	Health Sciences	Biomedical Research	Biochemistry & Molecular Biology
+84	Health Sciences	Biomedical Research	Biophysics
+85	Health Sciences	Biomedical Research	Developmental Biology
+86	Health Sciences	Biomedical Research	Genetics & Heredity
+87	Health Sciences	Biomedical Research	Microbiology
+88	Health Sciences	Biomedical Research	Microscopy
+89	Health Sciences	Biomedical Research	Mycology & Parasitology
+90	Health Sciences	Biomedical Research	Nutrition & Dietetics
+91	Health Sciences	Biomedical Research	Physiology
+92	Health Sciences	Biomedical Research	Toxicology
+93	Health Sciences	Biomedical Research	Virology
+94	Health Sciences	Clinical Medicine	Allergy
+95	Health Sciences	Clinical Medicine	Anesthesiology
+96	Health Sciences	Clinical Medicine	Arthritis & Rheumatology
+97	Health Sciences	Clinical Medicine	Cardiovascular System & Hematology
+98	Health Sciences	Clinical Medicine	Complementary & Alternative Medicine
+99	Health Sciences	Clinical Medicine	Dentistry
+100	Health Sciences	Clinical Medicine	Dermatology & Venereal Diseases
+101	Health Sciences	Clinical Medicine	Emergency & Critical Care Medicine
+102	Health Sciences	Clinical Medicine	Endocrinology & Metabolism
+103	Health Sciences	Clinical Medicine	Environmental & Occupational Health
+104	Health Sciences	Clinical Medicine	Gastroenterology & Hepatology
+105	Health Sciences	Clinical Medicine	General & Internal Medicine
+106	Health Sciences	Clinical Medicine	General Clinical Medicine
+107	Health Sciences	Clinical Medicine	Geriatrics
+108	Health Sciences	Clinical Medicine	Immunology
+109	Health Sciences	Clinical Medicine	Legal & Forensic Medicine
+110	Health Sciences	Clinical Medicine	Neurology & Neurosurgery
+111	Health Sciences	Clinical Medicine	Nuclear Medicine & Medical Imaging
+112	Health Sciences	Clinical Medicine	Obstetrics & Reproductive Medicine
+113	Health Sciences	Clinical Medicine	Oncology & Carcinogenesis
+114	Health Sciences	Clinical Medicine	Ophthalmology & Optometry
+115	Health Sciences	Clinical Medicine	Orthopedics
+116	Health Sciences	Clinical Medicine	Otorhinolaryngology
+117	Health Sciences	Clinical Medicine	Pathology
+118	Health Sciences	Clinical Medicine	Pediatrics
+119	Health Sciences	Clinical Medicine	Pharmacology & Pharmacy
+120	Health Sciences	Clinical Medicine	Psychiatry
+121	Health Sciences	Clinical Medicine	Respiratory System
+122	Health Sciences	Clinical Medicine	Sport Sciences
+123	Health Sciences	Clinical Medicine	Surgery
+124	Health Sciences	Clinical Medicine	Tropical Medicine
+125	Health Sciences	Clinical Medicine	Urology & Nephrology
+126	Health Sciences	Psychology & Cognitive Sciences	Behavioral Science & Comparative Psychology
+127	Health Sciences	Psychology & Cognitive Sciences	Clinical Psychology
+128	Health Sciences	Psychology & Cognitive Sciences	Developmental & Child Psychology
+129	Health Sciences	Psychology & Cognitive Sciences	Experimental Psychology
+130	Health Sciences	Psychology & Cognitive Sciences	General Psychology & Cognitive Sciences
+131	Health Sciences	Psychology & Cognitive Sciences	Human Factors
+132	Health Sciences	Psychology & Cognitive Sciences	Psychoanalysis
+133	Health Sciences	Psychology & Cognitive Sciences	Social Psychology
+134	Health Sciences	Public Health & Health Services	Epidemiology
+135	Health Sciences	Public Health & Health Services	Gerontology
+136	Health Sciences	Public Health & Health Services	Health Policy & Services
+137	Health Sciences	Public Health & Health Services	Nursing
+138	Health Sciences	Public Health & Health Services	Public Health
+139	Health Sciences	Public Health & Health Services	Rehabilitation
+140	Health Sciences	Public Health & Health Services	Speech-Language Pathology & Audiology
+141	Health Sciences	Public Health & Health Services	Substance Abuse
+142	Natural Sciences	Biology	Ecology
+143	Natural Sciences	Biology	Entomology
+144	Natural Sciences	Biology	Evolutionary Biology
+145	Natural Sciences	Biology	Marine Biology & Hydrobiology
+146	Natural Sciences	Biology	Ornithology
+147	Natural Sciences	Biology	Plant Biology & Botany
+148	Natural Sciences	Biology	Zoology
+149	Natural Sciences	Chemistry	Analytical Chemistry
+150	Natural Sciences	Chemistry	General Chemistry
+151	Natural Sciences	Chemistry	Inorganic & Nuclear Chemistry
+152	Natural Sciences	Chemistry	Medicinal & Biomolecular Chemistry
+153	Natural Sciences	Chemistry	Organic Chemistry
+154	Natural Sciences	Chemistry	Physical Chemistry
+155	Natural Sciences	Chemistry	Polymers
+156	Natural Sciences	Earth & Environmental Sciences	Environmental Sciences
+157	Natural Sciences	Earth & Environmental Sciences	Geochemistry & Geophysics
+158	Natural Sciences	Earth & Environmental Sciences	Geology
+159	Natural Sciences	Earth & Environmental Sciences	Meteorology & Atmospheric Sciences
+160	Natural Sciences	Earth & Environmental Sciences	Oceanography
+161	Natural Sciences	Earth & Environmental Sciences	Paleontology
+162	Natural Sciences	Mathematics & Statistics	Applied Mathematics
+163	Natural Sciences	Mathematics & Statistics	General Mathematics
+164	Natural Sciences	Mathematics & Statistics	Numerical & Computational Mathematics
+165	Natural Sciences	Mathematics & Statistics	Statistics & Probability
+166	Natural Sciences	Physics & Astronomy	Acoustics
+167	Natural Sciences	Physics & Astronomy	Applied Physics
+168	Natural Sciences	Physics & Astronomy	Astronomy & Astrophysics
+169	Natural Sciences	Physics & Astronomy	Chemical Physics
+170	Natural Sciences	Physics & Astronomy	Fluids & Plasmas
+171	Natural Sciences	Physics & Astronomy	General Physics
+172	Natural Sciences	Physics & Astronomy	Mathematical Physics
+173	Natural Sciences	Physics & Astronomy	Nuclear & Particle Physics
+174	Natural Sciences	Physics & Astronomy	Optics
