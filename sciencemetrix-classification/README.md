@@ -48,7 +48,7 @@ Pour envoyer un fichier de plus de 500M :
 
 # Constitution des données d'entrainement
 
-Le corpus initial provient d'Istex et compte `2 700 000` documents (résumé de l'article en anglais et domaine scientifique issu de la classification Science-Metrix de la revue associée). Les données sont au format csv (une colonne `txt` pour les résumés et `label` pour le domaine Science-Metrix). On a remplacé les caractères en majuscule des labels par des caractères en minuscules et on a supprimé les espaces. La colonne `id` est utilsiée comme identifiant.
+Le corpus initial provient d'Istex et compte `2 700 000` documents (résumé de l'article en anglais et domaine scientifique issu de la classification Science-Metrix de la revue associée). Les données sont au format csv (une colonne `txt` pour les résumés et `label` pour le domaine Science-Metrix). On a remplacé les caractères en majuscule des labels par des caractères en minuscules et on a supprimé les espaces. La colonne `id` est utilisée comme identifiant.
 
 ## Vectorisation
 
@@ -56,11 +56,11 @@ Nous utilisons le modèle `Bert` pour vectoriser les résumés en faisant la moy
 
 ## Passage de l'algo des KPPV
 
-Une fois l'ensemble de ces données obtenus, nous utilisons le programme `kppv.py` pour trouver pour chaque `label` la liste ordonnées des documents ayant le plus de voisins de la même classe. Les `id` des documents pour chaque label se trouve dans le fichier `./data/{label}` et le nombre de voisin correspondant `./nb-voisin/{label}`.
+Une fois l'ensemble de ces données obtenu, nous utilisons le programme `kppv.py` pour trouver pour chaque `label` la liste ordonnée des documents ayant le plus de voisins de la même classe. Les `id` des documents pour chaque label se trouve dans le fichier `./data/{label}` et le nombre de voisins correspondant `./nb-voisin/{label}`.
 
 ## constitution des données de train/test
 
-on utilise le script `split-train-test.py` pour obtenir le jeu de donnée d'entrainement `train.csv` et de test `test.csv`. On a besoin des dossiers `data` obtenu par kppv dans la partie précédente. Les fichiers `data-domain.csv` et `test-domain.csv` ne sont pas utilisé mais sont gardé pour d'éventuelles améliorations.
+On utilise le script `split-train-test.py` pour obtenir le jeu de données d'entrainement `train.csv` et de test `test.csv`. On a besoin du dossier `data` obtenu par kppv dans la partie précédente. Les fichiers `data-domain.csv` et `test-domain.csv` ne sont pas utilisés mais sont gardés pour d'éventuelles améliorations.
 
 # Entraînement du modèle
 
@@ -107,7 +107,7 @@ seuil:  0.7    precision:  0.91845    silence:  0.205589463
 
 # Autres
 
-Plusieurs disctionnaires sont enregistré format Pickle. Pour simplifier le code nous avons utilisé des identifiants pour chaque label / domaine (domaine = premier niveau de la classification, label = 3eme). Leur nom parle d'eux même. Une précision cependant :
+Plusieurs disctionnaires sont enregistrés au format Pickle. Pour simplifier le code nous avons utilisé des identifiants pour chaque label / domaine (domaine = premier niveau de la classification, label = 3eme). Leurs noms parle d'eux-mêmes. Une précision cependant :
 
 - id_domain2domain contient pour valeur les domaines avec majuscules et espaces.
 - id2label aussi.
