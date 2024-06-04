@@ -60,13 +60,31 @@ Une fois l'ensemble de ces données obtenu, nous utilisons le programme `kppv.py
 
 ## constitution des données de train/test
 
-On utilise le script `split-train-test.py` pour obtenir le jeu de données d'entrainement `train.csv` et de test `test.csv`. On a besoin du dossier `data` obtenu par kppv dans la partie précédente. Les fichiers `data-domain.csv` et `test-domain.csv` ne sont pas utilisés mais sont gardés pour d'éventuelles améliorations.
+On utilise le script `split-train-test.py` pour obtenir le jeu de données d'entrainement `train.csv` et de test `test.csv`. On a besoin du dossier `data` obtenu par kppv dans la partie précédente. Les fichiers `data-domain.csv` et `test-domain.csv` ne sont pas utilisés mais sont gardés pour d'éventuelles améliorations. Pour certaines classes, nous ne disposons pas d'assez de données et nous les avons, pour le moment, évinscer :
+
+```json
+[
+  "drama&theater",
+  "speech-languagepathology&audiology",
+  "architecture",
+  "automobiledesign&engineering",
+  "classics",
+  "complementary&alternativemedicine",
+  "demography",
+  "historyofscience,technology&medicine",
+  "horticulture",
+  "literarystudies",
+  "ornithology",
+  "artpractice,history&theory",
+  "folklore"
+]
+```
 
 # Entraînement du modèle
 
 ## formatage pour Fasttext
 
-On utilise `fasttext` comme classifieur. On utilise `process-train-test.py` pour les mettre au format attendu et on obtient les deux fichiers `train.txt` et `test.txt` (correspondants aux données stockées dans notre webdav, pouvant être obtenues grâce au fichier `train-test.dvc`)
+On utilise `fasttext` pour construire notre classifieur. On utilise `process-train-test.py` pour les mettre au format attendu et on obtient les deux fichiers `train.txt` et `test.txt` (correspondants aux données stockées dans notre webdav, pouvant être obtenues grâce au fichier `train-test.dvc`).
 
 ## paramètres d'entrainements
 
