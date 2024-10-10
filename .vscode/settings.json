@@ -4,7 +4,9 @@
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "cSpell.words": [
+        "loterre",
         "Loterre",
+        "skos",
         "venv",
         "webdav"
     ]
