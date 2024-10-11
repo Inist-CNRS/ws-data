@@ -58,3 +58,173 @@ stages:
       hash: md5
       md5: b323829722c7d93f25d0199a3f013e36
       size: 3031833
+  tgz-QX8:
+    cmd: loterreID=QX8 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/QX8.tgz
+      databases/QX8
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/QX8.skos
+      hash: md5
+      md5: 0e0210f8098cfa0d19918469480f60a0
+      size: 2027326
+    outs:
+    - path: databases/QX8.tgz
+      hash: md5
+      md5: fb4a666fe1cb78e0ce556dd3d1e7da0b
+      size: 3014673
+  tgz-3JP:
+    cmd: loterreID=3JP bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/3JP.tgz
+      databases/3JP
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/3JP.skos
+      hash: md5
+      md5: 8a20304e8bf72fd72c82879d922dc173
+      size: 2308578
+    outs:
+    - path: databases/3JP.tgz
+      hash: md5
+      md5: d2cb87a42a66d252b8eeb947307681e5
+      size: 5574459
+  tgz-73G:
+    cmd: loterreID=73G bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/73G.tgz
+      databases/73G
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/73G.skos
+      hash: md5
+      md5: f77a6ade78f20824c4ac32b5a5a290be
+      size: 2496320
+    outs:
+    - path: databases/73G.tgz
+      hash: md5
+      md5: febefac830ee4398863627ee846f9dbd
+      size: 4684383
+  tgz-9SD:
+    cmd: loterreID=9SD bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/9SD.tgz
+      databases/9SD
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/9SD.skos
+      hash: md5
+      md5: 7a7ecf5ef02e07bfb0ca26af228a0ea9
+      size: 3078291
+    outs:
+    - path: databases/9SD.tgz
+      hash: md5
+      md5: 1e9ab7831c0f9e9b959173a73acbd993
+      size: 2399224
+  tgz-P66:
+    cmd: loterreID=P66 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/P66.tgz
+      databases/P66
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/P66.skos
+      hash: md5
+      md5: 0c9cfd915beba169a839ebfa90c20c76
+      size: 3917649
+    outs:
+    - path: databases/P66.tgz
+      hash: md5
+      md5: 916dc97d57674d90c3d7eb3d269d1c6f
+      size: 3547544
+  tgz-MDL:
+    cmd: loterreID=MDL bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/MDL.tgz
+      databases/MDL
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/MDL.skos
+      hash: md5
+      md5: 03fa07edb29af5a50801302722c8fb16
+      size: 5657134
+    outs:
+    - path: databases/MDL.tgz
+      hash: md5
+      md5: 8040c6e7287827d5591e590c89e0c302
+      size: 7564247
+  tgz-P21:
+    cmd: loterreID=P21 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/P21.tgz
+      databases/P21
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/P21.skos
+      hash: md5
+      md5: 3d44f296cb995aedae522a50a33b2762
+      size: 8495524
+    outs:
+    - path: databases/P21.tgz
+      hash: md5
+      md5: 04079323aa27e49150946bb5d08ebe04
+      size: 12397953
+  tgz-BVM:
+    cmd: loterreID=BVM bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/BVM.tgz
+      databases/BVM
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/BVM.skos
+      hash: md5
+      md5: 08e1013cdf5b8d13f9da6c318a9e90c4
+      size: 9635826
+    outs:
+    - path: databases/BVM.tgz
+      hash: md5
+      md5: fbcb94e65d6a01115c815595e3379077
+      size: 4947959
+  tgz-N9J:
+    cmd: loterreID=N9J bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/N9J.tgz
+      databases/N9J
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/N9J.skos
+      hash: md5
+      md5: 4cbae496c05d3d2a534f52c059153d90
+      size: 58246718
+    outs:
+    - path: databases/N9J.tgz
+      hash: md5
+      md5: dd15bb423c42e47cd1c2c63e0f0b1511
+      size: 53493886
+  tgz-D63:
+    cmd: loterreID=D63 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/D63.tgz
+      databases/D63
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/D63.skos
+      hash: md5
+      md5: 990c26cb46fc302441f84ca46b6d0a28
+      size: 92156390
+    outs:
+    - path: databases/D63.tgz
+      hash: md5
+      md5: c250a67ee3ea5e89d25159d3ebb8e27c
+      size: 38554176

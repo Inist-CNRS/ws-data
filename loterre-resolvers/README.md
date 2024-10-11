@@ -49,5 +49,5 @@ dvc config core.autostage true
 1. se mettre dans ce répertoire: `cd loterre-resolvers`
 2. activer l'environnement virtuel: `source .venv/bin/activate`
 3. lancer le script: `./bin/get-files.sh`
-4. ajouter les fichiers à DVC: `dvc add ./data/*.skos`
-5. pousser les fichiers sur le remote: `dvc push`
+4. lancer la création des bases à mettre à jour: `dvc repro`
+5. pousser les fichiers: `dvc push`
