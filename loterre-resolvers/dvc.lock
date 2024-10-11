@@ -41,3 +41,20 @@ stages:
       hash: md5
       md5: b75e4538339c861d7a1c5f9b9b4daf3d
       size: 20186840
+  tgz-216:
+    cmd: loterreID=216 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/216.tgz
+      databases/216
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/216.skos
+      hash: md5
+      md5: 3adb88d03412ed4e4569b71b14354d0c
+      size: 1936035
+    outs:
+    - path: databases/216.tgz
+      hash: md5
+      md5: b323829722c7d93f25d0199a3f013e36
+      size: 3031833
