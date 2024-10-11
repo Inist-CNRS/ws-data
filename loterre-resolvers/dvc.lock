@@ -1,0 +1,43 @@
+schema: '2.0'
+stages:
+  db-2XK:
+    cmd: loterreID=2XK bunx ezs create-databases.ini <<< '[{}]'
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/2XK.skos
+      hash: md5
+      md5: b9c11f0d64f73cbd1109b8f80a0850e7
+      size: 28170863
+    outs:
+    - path: databases/2XK
+      hash: md5
+      md5: dbcded22fe5e3d87fd9f489c9d7799d0.dir
+      size: 36721558
+      nfiles: 91907
+  tgz-2XK:
+    cmd: loterreID=2XK bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/2XK.tgz
+      databases/2XK
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/2XK.skos
+      hash: md5
+      md5: b9c11f0d64f73cbd1109b8f80a0850e7
+      size: 28170863
+    outs:
+    - path: databases/2XK.tgz
+      hash: md5
+      md5: b75e4538339c861d7a1c5f9b9b4daf3d
+      size: 20186840
+  all:
+    cmd: echo "all"
+    deps:
+    - path: databases/2XK.tgz
+      hash: md5
+      md5: b75e4538339c861d7a1c5f9b9b4daf3d
+      size: 20186840
