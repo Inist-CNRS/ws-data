@@ -1,0 +1,108 @@
+stages:
+  tgz-2XK: # Laboratoires
+    cmd: loterreID=2XK bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/2XK.tgz databases/2XK
+    deps:
+    - data/2XK.skos
+    - create-databases.ini
+    outs:
+    - databases/2XK.tgz
+  tgz-216: # Éducation
+    cmd: loterreID=216 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/216.tgz databases/216
+    deps:
+    - data/216.skos
+    - create-databases.ini
+    outs:
+    - databases/216.tgz
+  tgz-3JP: # Sociologie
+    cmd: loterreID=3JP bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/3JP.tgz databases/3JP
+    deps:
+    - data/3JP.skos
+    - create-databases.ini
+    outs:
+    - databases/3JP.tgz
+  tgz-73G: # Philosophie
+    cmd: loterreID=73G bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/73G.tgz databases/73G
+    deps:
+    - data/73G.skos
+    - create-databases.ini
+    outs:
+    - databases/73G.tgz
+  tgz-9SD: # Pays et subdivisions
+    cmd: loterreID=9SD bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/9SD.tgz databases/9SD
+    deps:
+    - data/9SD.skos
+    - create-databases.ini
+    outs:
+    - databases/9SD.tgz
+  tgz-BVM: # NETSCITY
+    cmd: loterreID=BVM bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/BVM.tgz databases/BVM
+    deps:
+    - data/BVM.skos
+    - create-databases.ini
+    outs:
+    - databases/BVM.tgz
+  tgz-D63: # Communes (France)
+    cmd: loterreID=D63 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/D63.tgz databases/D63
+    deps:
+    - data/D63.skos
+    - create-databases.ini
+    outs:
+    - databases/D63.tgz
+  tgz-JVR: # MESH
+    cmd: loterreID=JVR bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/JVR.tgz databases/JVR
+    deps:
+    - data/JVR.skos
+    - create-databases.ini
+    outs:
+    - databases/JVR.tgz
+  tgz-MDL: # Astronomie
+    cmd: loterreID=MDL bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/MDL.tgz databases/MDL
+    deps:
+    - data/MDL.skos
+    - create-databases.ini
+    outs:
+    - databases/MDL.tgz
+  tgz-N9J: # SAGE
+    cmd: loterreID=N9J bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/N9J.tgz databases/N9J
+    deps:
+    - data/N9J.skos
+    - create-databases.ini
+    outs:
+    - databases/N9J.tgz
+  tgz-P21: # Littérature
+    cmd: loterreID=P21 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/P21.tgz databases/P21
+    deps:
+    - data/P21.skos
+    - create-databases.ini
+    outs:
+    - databases/P21.tgz
+  tgz-P66: # Mémoire
+    cmd: loterreID=P66 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/P66.tgz databases/P66
+    deps:
+    - data/P66.skos
+    - create-databases.ini
+    outs:
+    - databases/P66.tgz
+  tgz-QX8: # Paléoclimatologie
+    cmd: loterreID=QX8 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/QX8.tgz databases/QX8
+    deps:
+    - data/QX8.skos
+    - create-databases.ini
+    outs:
+    - databases/QX8.tgz
+  all:
+    cmd: echo "all"
+    deps:
+    - databases/216.tgz
+    - databases/QX8.tgz
+    - databases/3JP.tgz
+    - databases/73G.tgz
+    - databases/9SD.tgz
+    - databases/P66.tgz
+    - databases/MDL.tgz
+    - databases/P21.tgz
+    - databases/BVM.tgz
+    - databases/2XK.tgz
+    - databases/N9J.tgz
+    - databases/D63.tgz
+    - databases/JVR.tgz
