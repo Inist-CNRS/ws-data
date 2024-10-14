@@ -37,10 +37,58 @@ stages:
   all:
     cmd: echo "all"
     deps:
+    - path: databases/216.tgz
+      hash: md5
+      md5: b323829722c7d93f25d0199a3f013e36
+      size: 3031833
     - path: databases/2XK.tgz
       hash: md5
       md5: b75e4538339c861d7a1c5f9b9b4daf3d
       size: 20186840
+    - path: databases/3JP.tgz
+      hash: md5
+      md5: d2cb87a42a66d252b8eeb947307681e5
+      size: 5574459
+    - path: databases/73G.tgz
+      hash: md5
+      md5: febefac830ee4398863627ee846f9dbd
+      size: 4684383
+    - path: databases/9SD.tgz
+      hash: md5
+      md5: 1e9ab7831c0f9e9b959173a73acbd993
+      size: 2399224
+    - path: databases/BVM.tgz
+      hash: md5
+      md5: fbcb94e65d6a01115c815595e3379077
+      size: 4947959
+    - path: databases/D63.tgz
+      hash: md5
+      md5: c250a67ee3ea5e89d25159d3ebb8e27c
+      size: 38554176
+    - path: databases/JVR.tgz
+      hash: md5
+      md5: 524e06061bbfba82bf08e4840a5aee65
+      size: 111958290
+    - path: databases/MDL.tgz
+      hash: md5
+      md5: 8040c6e7287827d5591e590c89e0c302
+      size: 7564247
+    - path: databases/N9J.tgz
+      hash: md5
+      md5: dd15bb423c42e47cd1c2c63e0f0b1511
+      size: 53493886
+    - path: databases/P21.tgz
+      hash: md5
+      md5: 04079323aa27e49150946bb5d08ebe04
+      size: 12397953
+    - path: databases/P66.tgz
+      hash: md5
+      md5: 916dc97d57674d90c3d7eb3d269d1c6f
+      size: 3547544
+    - path: databases/QX8.tgz
+      hash: md5
+      md5: fb4a666fe1cb78e0ce556dd3d1e7da0b
+      size: 3014673
   tgz-216:
     cmd: loterreID=216 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/216.tgz
       databases/216
@@ -228,3 +276,20 @@ stages:
       hash: md5
       md5: c250a67ee3ea5e89d25159d3ebb8e27c
       size: 38554176
+  tgz-JVR:
+    cmd: EZS_CONTINUE_DELAY=60 EZS_PIPELINE_DELAY=1200 loterreID=JVR bunx ezs create-databases.ini
+      <<< '[{}]' && tar -czf databases/JVR.tgz databases/JVR
+    deps:
+    - path: create-databases.ini
+      hash: md5
+      md5: d24e36d0f1e6c881b412528ecbd78b4d
+      size: 604
+    - path: data/JVR.skos
+      hash: md5
+      md5: 4ef3370991e26d92054eeb66c5f75b42
+      size: 117642710
+    outs:
+    - path: databases/JVR.tgz
+      hash: md5
+      md5: 524e06061bbfba82bf08e4840a5aee65
+      size: 111958290

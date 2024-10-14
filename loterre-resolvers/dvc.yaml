@@ -49,7 +49,7 @@ stages:
     outs:
     - databases/D63.tgz
   tgz-JVR: # MESH
-    cmd: loterreID=JVR bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/JVR.tgz databases/JVR
+    cmd: EZS_CONTINUE_DELAY=60 EZS_PIPELINE_DELAY=1200 loterreID=JVR bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/JVR.tgz databases/JVR
     deps:
     - data/JVR.skos
     - create-databases.ini
@@ -76,13 +76,6 @@ stages:
     - create-databases.ini
     outs:
     - databases/P21.tgz
-  tgz-P66: # Mémoire
-    cmd: loterreID=P66 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/P66.tgz databases/P66
-    deps:
-    - data/P66.skos
-    - create-databases.ini
-    outs:
-    - databases/P66.tgz
   tgz-QX8: # Paléoclimatologie
     cmd: loterreID=QX8 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/QX8.tgz databases/QX8
     deps:
@@ -90,6 +83,13 @@ stages:
     - create-databases.ini
     outs:
     - databases/QX8.tgz
+  tgz-P66: # Mémoire
+    cmd: loterreID=P66 bunx ezs create-databases.ini <<< '[{}]' && tar -czf databases/P66.tgz databases/P66
+    deps:
+    - data/P66.skos
+    - create-databases.ini
+    outs:
+    - databases/P66.tgz
   all:
     cmd: echo "all"
     deps:
