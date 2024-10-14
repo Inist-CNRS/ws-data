@@ -51,3 +51,7 @@ dvc config core.autostage true
 3. lancer le script: `./bin/get-files.sh`
 4. lancer la création des bases à mettre à jour: `dvc repro`
 5. pousser les fichiers: `dvc push`
+
+> [!NOTE]  
+> Pour lancer la génération d'un vocabulaire en particulier (ex: `216`),
+> utiliser `dvc repro tgz@216`.
