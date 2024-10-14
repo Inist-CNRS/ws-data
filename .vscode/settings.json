@@ -4,7 +4,11 @@
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "cSpell.words": [
+        "bunx",
+        "loterre",
         "Loterre",
+        "NETSCITY",
+        "skos",
         "venv",
         "webdav"
     ]
