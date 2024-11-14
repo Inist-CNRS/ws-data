@@ -48,7 +48,7 @@ Pour envoyer un fichier de plus de 500M :
 
 # Constitution des données d'entrainement
 
-Le corpus initial provient d'Istex et compte `2 700 000` documents (résumé de l'article en anglais et domaine scientifique issu de la classification Science-Metrix de la revue associée). Les données sont au format csv (une colonne `txt` pour les résumés et `label` pour le domaine Science-Metrix). On a remplacé les caractères en majuscule des labels par des caractères en minuscules et on a supprimé les espaces. La colonne `id` est utilisée comme identifiant.
+Le corpus initial provient d'Istex et compte `2 700 000` documents (résumé de l'article en anglais et domaine scientifique issu de la classification Science-Metrix de la revue associée). On a pris au 1er juillet 2024 l'ensemble des documents Istex en anglais dont la métadonnée `troisième niveau de la classification Science-Metrix` est renseignée. Les données sont au format csv (une colonne `txt` pour les résumés et `label` pour le domaine Science-Metrix). On a remplacé les caractères en majuscule des labels par des caractères en minuscules et on a supprimé les espaces. La colonne `id` est utilisée comme identifiant.
 
 ## Vectorisation
 
