@@ -132,7 +132,7 @@ class NERDataset(Dataset):
         return torch.tensor(padded_words), torch.tensor(padded_tags)
 
 
-# Split data into train and dev datasets (90% for training,20% for dev)
+# Split data into train and dev datasets (80% for training,20% for dev)
 dataset = NERDataset(data, word2idx, tag2idx, max_length)
 train_size = int(0.8 * len(dataset))
 dev_size = len(dataset) - train_size
@@ -245,14 +245,14 @@ def train_model(model, train_dataloader, dev_dataloader, epochs=100, lr=0.001, r
             total_loss += loss.item()
             progress_bar.set_postfix(loss=loss.item())
 
-        # Calcul de la loss moyenne sur l'ensemble du jeu de données d'entraînement
+        # computing loss
         avg_train_loss = total_loss / len(train_dataloader)
         print(f"Epoch {epoch+1}/{epochs}, Training Loss: {avg_train_loss:.4f}")
 
-        # Eval sur le jeu dev
+        # Eval on validation data
         model.eval()
         total_dev_loss = 0
-        with torch.no_grad():  # skip le calcul des gradients = gain de temps et de coûts de calculs
+        with torch.no_grad():  # skip compute of gradients
             for words, tags in dev_dataloader:
                 words, tags = words.to(device), tags.to(device)
                 outputs = model(words)
@@ -263,15 +263,15 @@ def train_model(model, train_dataloader, dev_dataloader, epochs=100, lr=0.001, r
         print(f"Epoch {epoch+1}/{epochs}, dev Loss: {avg_dev_loss:.4f}")
 
         print("LR : ", optimizer.state_dict()["param_groups"])
-        # Sauvegarde du modèle si la dev loss est meilleure
+        # Save model if loss on validation data is better
         if avg_dev_loss < best_loss:
             torch.save(model.state_dict(), "best_model.pth")
             print("Saving best model")
             best_loss = avg_dev_loss
             try_num = 0
         else:
+            # reduce lr
             lr = 0.8*lr
-            # Réduit lr si la perte ne s'améliore pas
             optimizer.param_groups[0]['lr'] = lr
             try_num += 1
             print(f"No improvement. Retry {try_num}.")
