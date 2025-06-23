@@ -1,0 +1,5 @@
+outs:
+- md5: 3ebfb2e277b512f5f735a34b9b0087c9
+  size: 80
+  hash: md5
+  path: kaggle.json
