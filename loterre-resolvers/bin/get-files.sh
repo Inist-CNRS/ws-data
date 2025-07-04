@@ -31,7 +31,7 @@ printf "73G\n"
 curl --progress-bar -o ./data/73G.skos "$(get_url 73G)"
 
 printf "9SD - loterre-pays\n"
-curl --progress-bar -o ./data/9SD.skos "$(get_url 9SD)"
+curl --progress-bar -o ./data/9SD.skos http://mapping-tables.daf.intra.inist.fr/loterre-pays.xml
 
 printf "BVM\n"
 curl --progress-bar -o ./data/BVM.skos http://mapping-tables.daf.intra.inist.fr/BVM.skos
