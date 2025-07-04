@@ -55,4 +55,4 @@ printf "P66\n"
 curl --progress-bar -o ./data/P66.skos "$(get_url P66)"
 
 printf "QX8\n"
-curl --progress-bar -o ./data/QX8.skos "$(get_url QX8)"
+curl --progress-bar -o ./data/QX8.skos http://mapping-tables.daf.intra.inist.fr/QX8.skos
