@@ -55,3 +55,7 @@ dvc config core.autostage true
 > [!NOTE]  
 > Pour lancer la génération d'un vocabulaire en particulier (ex: `216`),
 > utiliser `dvc repro tgz@216`.
+
+> [!WARNING]
+> Pour ajouter un nouveau vocabulaire (ex: `VOCA`), ne pas oublier le
+> `dvc add data/VOCA.skos`.
