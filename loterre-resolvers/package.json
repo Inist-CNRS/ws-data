@@ -1,1 +1,8 @@
-{ "dependencies": { "@ezs/analytics": "^2.3.2", "@ezs/basics": "^2.7.2", "@ezs/core": "^3.10.4", "@ezs/storage": "^3.2.3" } }
+{
+    "dependencies": {
+        "@ezs/analytics": "^2.3.6",
+        "@ezs/basics": "^2.9.2",
+        "@ezs/core": "^4.1.1",
+        "@ezs/storage": "^3.2.6"
+    }
+}
