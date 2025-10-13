@@ -5,11 +5,18 @@
     },
     "cSpell.words": [
         "bunx",
+        "Lodex",
         "loterre",
         "Loterre",
         "NETSCITY",
         "skos",
         "venv",
         "webdav"
-    ]
+    ],
+    "files.watcherExclude": {
+        "**/.dvc/cache/**": true,
+        "**/.dvc/tmp/**": true,
+        "**/.venv/**": true,
+        "**/node_modules/*/**": true
+    }
 }
