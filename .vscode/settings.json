@@ -17,6 +17,16 @@
         "**/.dvc/cache/**": true,
         "**/.dvc/tmp/**": true,
         "**/.venv/**": true,
-        "**/node_modules/*/**": true
+        "**/databases/**": true,
+        "**/node_modules/**": true,
+        "**/data/**": true
+    },
+    "search.exclude": {
+        "**/.dvc/cache/**": true,
+        "**/.dvc/tmp/**": true,
+        "**/.venv/**": true,
+        "**/databases/**": true,
+        "**/node_modules/**": true,
+        "**/data/**": true
     }
 }
