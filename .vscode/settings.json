@@ -18,6 +18,7 @@
         "**/.dvc/tmp/**": true,
         "**/.venv/**": true,
         "**/databases/**": true,
+        "**/databases-cacache/**": true,
         "**/node_modules/**": true,
         "**/data/**": true
     },
@@ -26,6 +27,7 @@
         "**/.dvc/tmp/**": true,
         "**/.venv/**": true,
         "**/databases/**": true,
+        "**/databases-cacache/**": true,
         "**/node_modules/**": true,
         "**/data/**": true
     }
