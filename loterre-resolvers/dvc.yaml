@@ -53,10 +53,12 @@ stages:
       - JVR # MESH
     do:
       cmd:
-      - EZS_PIPELINE_DELAY=1200 loterreID=${item} bunx ezs create-databases.ini <<< '[{}]'
+      - EZS_PIPELINE_DELAY=4800 loterreID=${item} bunx ezs create-databases.ini <<< '[{}]'
       - tar -czf databases/${item}.tgz databases/${item}
       deps:
       - data/${item}.skos
       - create-databases.ini
+      - download.ini
+      - compile.ini
       outs:
       - databases/${item}.tgz
