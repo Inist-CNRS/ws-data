@@ -14,7 +14,7 @@ with open("./data/corpus-istex.json", "r") as f:
     
 def teeft(text, language="en", nb_kw=100):
     data_in = [{"value":text}]
-    response = requests.post(f"https://terms-extraction.services.istex.fr/v2/teeft/{language}?nb={nb_kw}", json.dumps(data_in))
+    response = requests.post(f"URL_WS_TEEFT", json.dumps(data_in))
     
     if response.status_code != 200 :
         print("Can not use teeft in summarization ws", sys.stderr)
