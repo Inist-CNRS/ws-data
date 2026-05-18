@@ -1,0 +1,5 @@
+outs:
+- md5: fc148236dc2bad13780688c6e082fae0
+  size: 30862720
+  hash: md5
+  path: RNSR-2026.xml

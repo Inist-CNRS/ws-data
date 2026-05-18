@@ -1,0 +1,5 @@
+outs:
+- md5: b5c282979e9e58e69542fafa796c2a24
+  size: 9224550
+  hash: md5
+  path: RNSR-2026.json
